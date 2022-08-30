@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+html {
+    scroll-behavior: smooth; /*scrollea suave */
+}
+
+body{
+    font-family:  'Raleway', sans-serif;
+    color: rgba(0, 0, 0, 0.971);
+    font-size: 16px;
+    font-weight: 200;
+}
+/* encabezado */
+header{
+    display: flex;
+    justify-content:space-between ;
+    align-items:center ; /*centra en un contenedor*/
+    width: 1100px;
+    height: 75px;
+    margin: auto;
+}
+    header a img {
+        width: 60px;
+        vertical-align: middle;  /* centra dentro de una celda al medio  */
+        margin-right: 16px; /*pensar las separaciones,para separar la imagen de la palabra   */
+    }
+header a {
+    text-decoration: none; /*sacar el subrayado */
+    color: #707070;
+    font-weight: 600; /*para el titulo */
+}
+
+header nav a {
+    /*separacion para las palabras se puede usar padding o margin left*/
+    margin-left: 24px;
+   padding: 12px; /* agranda el area de clic y mejora la experiencia*/
+    
+ 
+}
+
+/*hero banner  */
+#heroBanner {
+    height: 500px ;
+    background-image:url(../imgs/hero.jpg) ; /* el ../ sube un nivel , es decir sale de una carpeta y abre otra para buscar la foto*/
+    background-repeat: no-repeat; /* no repite la  imagen auqnue sea pequeña*/
+    background-size: cover; /*corrige la imagen*/
+    background-position: center -120;
+    display: flex;
+    align-items:center ; /*en el eje vertical ubica los contenedores*/
+}
+#heroBanner div {
+    width: 1100px;
+    margin: auto;
+
+}
+h1{
+    font-size: 40px;
+    color: #FFB968;
+    font-weight: 600;
+    width: 410px;
+    margin-bottom: 24px;
+}
+#heroBanner div p{
+    width: 408px;
+}
+/* main */
+main{
+width: 1100px;
+margin: auto;
+}
+
+#letsgo {
+    height:330px ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+
+#letsgo h2 {
+    width: 100% ;
+     /*ocupa el ancho al 100 %*/
+    text-align: center;
+    font-size: 32px;
+    color: #FFB968;
+    margin-bottom: 24px;
+    }
+
+#letsgo p {
+    width: 600px;
+    text-align: center;
+}
+/*promociones */
+
+#promos{
+    display: flex;
+    flex-wrap: wrap; /* respeta los anchos */
+}
+    #promo1 , #promo2{
+        color: white;
+        width: 550px;
+        height: 550px;
+        padding: 100px 80px 0px 80px;
+    }
+   
+    #promo1{
+     background-color: #807871;
+    }
+    #promo2{
+        background-color: #FFB968;
+    }
+         #promos h2 {
+             font-size:32px ;
+             font-weight:600 ;
+             margin-bottom: 32px;
+          }
+#separador {
+    text-align: center;
+    font-size: 32px;
+    color: #FFB968;
+    font-weight: 600 ;
+    margin: 80px 0px;
+}
+#historia{
+    display: flex;
+    justify-content:space-between ;
+}
+#historia img{
+    width: 339px;
+    height: 290px;
+}
+#historia article {
+    width:339px ;
+    height: 450px;
+    background-color: #807871;
+    color: white;
+    text-align:left;
+      
+}
+ #historia h3 {
+    font-weight: 600 ;
+    margin: 20px 20px;
+    font-size: 30px;
+ }
+
+ #historia p {
+    font-weight: 200 ;
+    margin: 20px 20px;
+    font-weight: 200;
+}
+
+/*formulario */
+#formulario{
+    height: 580px;
+    padding-top: 50px;
+    background-image: url(../imgs/hero-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -120px;
+    margin-top: 64px ;
+}
+#formulario form{
+    width: 690px;
+    background-color: rgb(239, 181, 75);
+   padding: 32px;
+    margin: auto;
+    border: 1px solid #cecece; /*borde para el formulario  */
+    border-radius: 12px; /* bordes redondeados */ 
+}
+#formulario form label {
+    margin-top: 16px;
+    display: block;
+}
+
+#formulario form input , textarea {
+    display: block; /* convierte los elementos de linea en bloque */
+    width: 100%; /* le pongo una medida fija o al 100 % que use*/
+    font-family: "Raleway";
+    font-size: 16px ;
+    padding: 8px;
+    border: 1px solid #cecece;
+    border-radius: 8px ;
+    margin-top: 8px;
+}
+
+textarea{
+    height: 96px;
+    resize: none; /*quita la opcion de agrandar el contenedor de comentarios*/
+}
+
+button {
+    display: block;
+    width: 100%; /*puedo poner 50 %*/
+    margin: 32px auto 0px auto;
+    font-family: 'raleway';
+    font-size: 16px;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #cecece;
+    border-radius: 8px ;
+
+    /*para q se vea la manito en el boton */
+    cursor: pointer;
+    
+}
+button:hover {
+    /* para que cambie de color el boton cuando lo toco*/
+    background-color: #d6cbbf;
+}
+
+footer {
+    background-color: #807871;
+}
+
+    #contenedorfooter{
+        width: 1100px;
+        height: 160px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #contenedorfooter img {
+        width: 32px;
+        margin-right: 8px;
+       
+    }
+    #contenedorfooter a { 
+        text-decoration: none;
+    }
+        #contenedorfooter nav {
+            color: white;
+            display: flex;
+        }
+
+        #contenedorfooter ul {
+            list-style: none;
+            margin-left: 56px ; /* xq si pongo right se me separa del costado derecho del borde */
+            
+        }
+
+        .tituloLista {
+            font-weight: 600;
+            margin-bottom: 8px; 
+        }
+
+        #contenedorfooter li {
+            margin-bottom: 4px;
+        }
